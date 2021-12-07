@@ -1,0 +1,13 @@
+name: project
+
+conda_env: conda.yaml
+
+entry_points:
+  manual_logger:
+    parameters:
+      max_iter: {type: float, default: 100}
+    command: "python manual_log.py {max_iter}"
+  auto_logger:
+    parameters:
+      max_iter: {type: float, default: 100}
+    command: "python auto_log.py {max_iter}"
